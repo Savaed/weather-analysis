@@ -23,16 +23,16 @@ Exploratory analysis, the most extensive part of the project, focuses mainly on 
 Visualisations mainly concern correlations and relationships between data, distributions or groups of similar observations. The main variables represented in the graphs are temperature, pressure, humidity or UV index, among others.
 
 ### Data preprocessing
-Data processing involves determining the daily mean values of the observations, filling in missing values using the chosen method and dividing the data into learning and test sets.
+Data processing involves determining the daily mean values of the observations, filling in missing values using the chosen method and dividing the data into learning and test sets. Finally, a `sklearn` pipeline was created to encapsulate the data processing.
 
 ### Feature selection
-Feature selection is based on principal component coefficient analysis and feature importaces obtained from a random forest.
+Feature selection is based on principal component coefficient analysis and feature importaces obtained from a random forest. 
 
 ### Hyperparemeter optimisation
 Hyper-optimisation was carried out using Optuna, a software library that allows easy Bayesian optimisation and visulisation of the optimisation process. 
 
 ### Model evaluation & error analysis
-Standard classification metrics such as accuracy, F1 score, PR curve or confusion matrix were used to assess the quality of model performance. Cross-validation and cross-entropy were used to test the stability of the models.
+Standard classification metrics such as accuracy, F1 score, PR curve or confusion matrix were used to assess the quality of model performance. Cross-validation was used to test the stability of the models.
 
 ## Tech stack
 Technologies and tools used in this project:
